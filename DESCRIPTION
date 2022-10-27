@@ -1,0 +1,25 @@
+Package: multiTL
+Type: Package
+Title: Multiple transfer learning methods using summary statistics
+Version: 0.1.0
+Authors@R: 
+    person(given = "Yi",
+           family = "Han",
+           role = c("aut", "cre"),
+           email = "yhan@hsph.harvard.edu")
+Imports: corpcor, MASS, stats, viRandomForests, randomForest, pROC,
+        glmnet
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+Depends: R (>= 2.10)
+RoxygenNote: 7.1.1
+Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-10-26 20:36:11 UTC; yhan
+Author: Yi Han [aut, cre]
+Maintainer: Yi Han <yhan@hsph.harvard.edu>
