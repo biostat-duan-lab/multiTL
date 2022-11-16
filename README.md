@@ -25,8 +25,3 @@ If you are on Linux or you would like to compile from source, you can download t
 ```r
 install.packages("/path/to/downloaded_source.tar.gz", repos=NULL, type="source")
 ```
-
-If you have `devtools`, you can also type: 
-```r
-install_github("biostat-duan-lab/multiTL")
-```
