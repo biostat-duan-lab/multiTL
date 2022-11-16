@@ -4,7 +4,6 @@
 #' @param y y
 #' @param size The ratio to split for training data
 #' @return A list of x_train, y_train, x_test, y_test
-#' @export
 
 train_test_split <- function(x, y, size){
   n = length(y)

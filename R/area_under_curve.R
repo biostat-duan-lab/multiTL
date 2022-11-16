@@ -3,7 +3,6 @@
 #' @param y,y.prob estimated y and actual y
 #' @return AUC
 #' @importFrom pROC roc
-#' @export
 
 area_under_curve <- function(y, y.prob){
   pROC::auc(pROC::roc(y, as.numeric(y.prob)))

@@ -4,7 +4,6 @@
 #' @param k Target sample size
 #' @param p Dimension
 #' @return Calibration estimator after adding threshold
-#' @export
 
 thres<-function(b, k, p){
   b*(rank(abs(b))>=(p-k))

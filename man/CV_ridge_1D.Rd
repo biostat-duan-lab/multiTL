@@ -13,12 +13,12 @@ CV_ridge_1D(x_train, y_train, w, rho, var)
 
 \item{w}{Source model parameter estimators}
 
-\item{rho}{Correlation of target and source model parametor estimators}
+\item{rho}{Correlation of target and source model parameter estimators}
 
-\item{var}{Variance of target and source model parametor estimators}
+\item{var}{Variance of target and source model parameter estimators}
 }
 \value{
-A list with the best MSE, lambda and eta
+A list with the best MSE, beta and lambda
 }
 \description{
 3-fold cross validation for selecting tunning parameters

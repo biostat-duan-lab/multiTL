@@ -3,9 +3,9 @@
 #' @param x_train x for training
 #' @param y_train y for training
 #' @param w Source model parameter estimators
-#' @param rho Correlation of target and source model parametor estimators
-#' @param var Variance of target and source model parametor estimators
-#' @return A list with the best MSE, lambda and eta
+#' @param rho Correlation of target and source model parameter estimators
+#' @param var Variance of target and source model parameter estimators
+#' @return A list with the best MSE, beta and lambda
 #' @export
 
 

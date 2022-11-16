@@ -8,33 +8,26 @@ NULL
 # library(corpcor)
 # library(glmnet)
 #
-# simulate_coef <- function(mean=c(0,0), var, rho, p,ortho = F){
-#   if(ortho){
-#     sd_delta = sqrt((1/(rho^2)-1)*var[2])
-#     beta = rnorm(p,mean = 0,sd = sqrt(var[1]))
-#     # w = rnorm(p,mean = 0,sd = sqrt(var[2]))
-#     delta = rnorm(p, mean=0, sd = sd_delta)
-#     w = beta - delta
+# simulate_coef <- function(mean=0, var, rho, p){
+#   beta = matrix(mvrnorm(n=p, mu=mean, Sigma=var[1]), p, 1)
+#   sd_delta = sqrt(var[1]+var[2]-2*rho*sqrt(var[1]*var[2]))
+#
+#   w = NULL
+#   for(i in 1:length(sd_delta)){
+#     delta = rnorm(p, mean=mean, sd = sd_delta[i])
+#     w_tmp = beta - delta
+#     w = cbind(w, w_tmp)
 #   }
-#   else{
-#     cov_raw = matrix(rbind(c(var[1], sqrt(var[1]*var[2])*rho),c(sqrt(var[1]*var[2])*rho, var[2])), 2, 2)
-#     if(corpcor::is.positive.definite(cov_raw)==FALSE){
-#       cov = corpcor::make.positive.definite(cov_raw)
-#     }else{
-#       cov = cov_raw
-#     }
-#     beta_w = matrix(mvrnorm(n=p, mu=mean, Sigma=cov), p, 2)
-#     w = matrix(beta_w[,2],p,1)
-#     beta =  matrix(beta_w[,1],p,1)
-#   }
-#   return(return(list(beta=beta, w=w)))
+#
+#
+#   return(list(beta=beta, w=w))
 # }
 #
-# var=c(1,1)
-# rho=0.6
+# var = c(1,rep(1,5))
+# rho=seq(0.4,0.6,0.05)
 # p=50
 #
-# coef = simulate_coef(mean=c(0,0), var, rho, p,ortho = F)
+# coef = simulate_coef(mean=0, var, rho, p)
 # w.src=coef$w
 # beta.tar=coef$beta
 #
@@ -50,4 +43,4 @@ NULL
 # y=data$y
 # w.src=coef$w
 # data_angleTL=list(X=X,y=y,w.src=w.src)
-
+#

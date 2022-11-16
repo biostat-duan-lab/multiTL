@@ -1,25 +1,20 @@
 Package: multiTL
 Type: Package
-Title: Multiple transfer learning methods using summary statistics
+Title: Transfer Learning Methods using Summary Statistics
 Version: 0.1.0
-Authors@R: 
-    person(given = "Yi",
-           family = "Han",
-           role = c("aut", "cre"),
-           email = "yhan@hsph.harvard.edu")
+Author: Yi Han
+Maintainer: Yi Han <yhan@hsph.harvard.edu>
 Imports: corpcor, MASS, stats, viRandomForests, randomForest, pROC,
         glmnet
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Remotes: yiiihan/viRandomForests
+Description: This package includes three transfer learning methods, COMMUTE, transRF and angleTL. Each method aims at improving target models performance by incorporating pre-trained source models.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: false
 Depends: R (>= 2.10)
-RoxygenNote: 7.1.1
-Suggests: rmarkdown, knitr, testthat (>= 3.0.0)
+RoxygenNote: 7.1.2
+Suggests: rmarkdown, knitr
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2022-10-26 20:36:11 UTC; yhan
-Author: Yi Han [aut, cre]
-Maintainer: Yi Han <yhan@hsph.harvard.edu>
+Packaged: 2022-11-16 15:44:08 UTC; yhan

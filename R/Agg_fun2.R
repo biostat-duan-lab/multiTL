@@ -1,6 +1,6 @@
 #' @title Agg_fun1
-#' @description Aggregating beta estimator
-#' @param B A matrix of target-only estimator and target estimator from each source in each column
+#' @description Aggregating beta estimator using logistic regression
+#' @param B /n/home11/yhan/rpackage/multiTL_0.1.0.tar.gz
 #' @param x.val,y.val validation X and y
 #' @param const A parameter, by default is 2
 #' @return Aggregated beta estimator

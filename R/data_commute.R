@@ -97,7 +97,7 @@ NULL
 #   X.pool = X.pool[-sample.k,]
 # }
 #
-# data_commute = list(X=X.tar,y=y.tar,X.src=X.src,y.src=y.src,n.src=nt,w.src=w.src,r=1,S=2)
+# data_commute = list(X=data_commute$X,y=data_commute$y,X.src=data_commute$X.src,y.src=data_commute$y.src,n.src=data_commute$n.src,w.src=data_commute$w.src,r=25,S=2)
 # X.src = X.src[1:2]
 # y.src = y.src[1:2]
 # w.src = list()

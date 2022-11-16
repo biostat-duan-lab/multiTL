@@ -1,6 +1,6 @@
 #' @title Agg_fun1
-#' @description Aggregating beta estimator
-#' @param B A matrix of target-only estimator and target estimator from each source in each column
+#' @description Aggregating beta estimator using inverse weights
+#' @param B A matrix of target-only, single source estimators and proposed estimators in each column
 #' @param x.val,y.val validation X and y
 #' @param const A parameter, by default is 2
 #' @return Aggregated beta estimator
