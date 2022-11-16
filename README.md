@@ -8,9 +8,24 @@ The goal of multiTL is to incorporate pre-trained models from source into transf
 
 ## Installation
 
-You can install the development version of multi from
-[GitHub](https://github.com/) with:
+`multiTL` requires the following R packages: 'corpcor', 'MASS', 'stats', 'viRandomForests', 'randomForest', 'pROC', 'glmnet'. Install them by: 
 
-``` r
-devtools::install_github("yiiihan/multiTL")
+```r
+install.packages(c('corpcor', 'MASS', 'stats', 'randomForest', 'pROC', 'glmnet'), dependencies=TRUE)
+```
+
+For R package 'viRandomForests', you can download the source codes [viRandomForests_1.0.tar.gz](https://github.com/biostat-duan-lab/multiTL/viRandomForests_1.0.tar.gz)
+
+```r
+install.packages('/path/to/viRandomForests_1.0.tar.gz', type='source', repo=NULL)
+```
+
+If you are on Linux or you would like to compile from source, you can download the source codes [multiTL_0.1.0.tar.gz](https://github.com/biostat-duan-lab/multiTL/releases/multiTL_0.1.0.tar.gz). Mac users should refer to [this page](https://cran.r-project.org/bin/macosx/tools/) for the various dependencies required. Install then via: 
+```r
+install.packages("/path/to/downloaded_source.tar.gz", repos=NULL, type="source")
+```
+
+If you have `devtools`, you can also type: 
+```r
+install_github("biostat-duan-lab/multiTL")
 ```
