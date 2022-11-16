@@ -1,6 +1,7 @@
 # multiTL
 
-The goal of multiTL is to incorporate pre-trained models from source into transfer learning framework. We offer three major methods: commute, transRF and angleTL. For details about the methodology, check out our paper: 
+In multiTL, we offer algorithms of three methods to achieve the same goal-- improving the risk prediction performance of a target population with limited samples by incorporating pre-trained models from external source data through transfer learning approaches. Details of these three methods--COMMUTE [1], transRF [2] and angleTL [3], can be found in our preprints and paper:
+
 - [1] Gu T, Lee PH, Duan R. “COMMUTE: Communication-efficient transfer learning approach for multi-site risk prediction.” (2022) [MedRxiv](https://www.medrxiv.org/content/10.1101/2022.03.23.22272834v1).
 - [2] Gu T, Han Y, Duan R. “A transfer learning approach based on random forest with application to breast cancer prediction in underrepresented
     populations.”  (2022) [Proceedings of Pacific Symposium on Biocomputing (PSB) 2023](https://psb.stanford.edu/callfor/papers/psb23_papers_allv2.pdf).
