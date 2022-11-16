@@ -20,7 +20,7 @@ For R package 'viRandomForests', you can download the source codes [viRandomFore
 install.packages('/path/to/viRandomForests_1.0.tar.gz', type='source', repo=NULL)
 ```
 
-If you are on Linux or you would like to compile from source, you can download the source codes [multiTL_0.1.0.tar.gz](https://github.com/biostat-duan-lab/multiTL/releases/multiTL_0.1.0.tar.gz). Mac users should refer to [this page](https://cran.r-project.org/bin/macosx/tools/) for the various dependencies required. Install then via: 
+If you are on Linux or you would like to compile from source, you can download the source codes [multiTL_0.1.0.tar.gz](https://github.com/biostat-duan-lab/multiTL/blob/master/releases/multiTL_0.1.0.tar.gz). Mac users should refer to [this page](https://cran.r-project.org/bin/macosx/tools/) for the various dependencies required. Install then via: 
 ```r
 install.packages("/path/to/downloaded_source.tar.gz", repos=NULL, type="source")
 ```
