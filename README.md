@@ -14,7 +14,7 @@ The goal of multiTL is to incorporate pre-trained models from source into transf
 install.packages(c('corpcor', 'MASS', 'stats', 'randomForest', 'pROC', 'glmnet'), dependencies=TRUE)
 ```
 
-For R package 'viRandomForests', you can download the source codes [viRandomForests_1.0.tar.gz](https://github.com/biostat-duan-lab/multiTL/viRandomForests_1.0.tar.gz)
+For R package 'viRandomForests', you can download the source codes [viRandomForests_1.0.tar.gz](https://github.com/biostat-duan-lab/multiTL/blob/master/viRandomForests_1.0.tar.gz)
 
 ```r
 install.packages('/path/to/viRandomForests_1.0.tar.gz', type='source', repo=NULL)
