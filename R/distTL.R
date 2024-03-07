@@ -8,6 +8,18 @@
 #' @export
 
 distTL <- function(X, y, w.src){
+  if(ncol(w.src)!=1){
+    w.src_unit = apply(w.src, 2, function(x) x/sqrt(sum(x^2)))
+    ##ensemble w via eigen values
+    B = X%*%w.src_unit
+    G = cor(B)
+    w_weight = (eigen(G)$vectors[,1])^2
+    w.src = w.src_unit%*%w_weight
+    
+  }else{
+    w.src = w.src
+  }
+                       
   glm.tar = glmnet(X,y,family = 'gaussian',alpha=0)
   beta <- predict(glm.tar, s=0.05, type = 'coefficients')[-1]
   var = c(var(beta),var(w.src))
