@@ -18,7 +18,7 @@ angleTL <- function(X, y, w.src){
     w.src = w.src_unit%*%w_weight
 
   }else{
-    w.src = w.src[[1]]
+    w.src = w.src
   }
 
   glm.tar = glmnet(X,y,family = 'gaussian',alpha=0)
